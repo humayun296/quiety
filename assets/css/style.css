@@ -154,6 +154,17 @@
     display: none;
 }
 
+@media (max-width: 1199px) {
+
+
+.container {
+    max-width: 1100px;
+}
+
+
+}
+
+
 @media (max-width: 1024px) {
 
     .header-start .navigation {
@@ -285,6 +296,11 @@
         display: block;
         width: 18px;
         height: 18px;
+    }
+
+    .header-start .logo img {
+
+        width: 100%;
     }
 
 
@@ -633,7 +649,8 @@
 /* WHY CHOOSE US SECTION STARTED */
 
 .choose .container {
-    padding: 60px 30px;
+
+    padding: 120px 30px;
     display: flex;
     flex-direction: column;
 }
@@ -861,7 +878,323 @@
     }
 
 }
-
-
-
 /* WHY CHOOUSE US SECTION END */
+
+
+
+/* BEGIN THIRD SECTION TABS */
+
+.third-sec {
+
+    background-color: black;
+    padding: 60px 40px;
+}
+
+.third-sec .row {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-sec .row h2 {
+    font-size: 40px;
+    line-height: 55px;
+    font-family: poppins;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: white;
+    width: 70%;
+}
+
+.third-sec .row p {
+
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffffb5;
+}
+
+.third-sec .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.third-sec .tabs-main {
+
+    display: flex;
+    gap: 40px;
+}
+
+.third-sec .tabs .tab-heading1, .tab-heading2, .tab-heading3 {
+
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 500;
+    background: #0044e3;
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+
+.third-sec .tabs img {
+
+    width: 40px;
+    padding-right: 14px;
+}
+
+.third-sec .tab-content {
+
+    padding: 80px 0px;
+    display: flex;
+    transition: opacity 0.4s ease;
+}
+
+.third-sec .tab-content .left {
+
+    width: 50%;
+}
+
+.third-sec .tab-content .left img {
+
+    width: 490px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.third-sec .tab-content .right {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-sec .tab-content .right h2 {
+
+    font-size: 32px;
+    line-height: 50px;
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.third-sec .tab-content .right p {
+        font-size: 18px;
+        font-family: 'Poppins';
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 20px;
+        color: white;
+
+}
+
+
+.third-sec .tab-content .right ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.third-sec .tab-content .right li {
+
+    color: white;
+}
+
+.third-sec .tab-content .right .btn {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.third-sec .tab-content .right .btn a.request {
+    text-decoration: none;
+    padding: 10px 28px;
+    background: #175cff;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 1199px) {
+
+    .third-sec .tab-content .left img {
+        width: 420px;
+        height: 570px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .third-sec .tab-content .left img {
+        width: 400px;
+        height: 570px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .third-sec .tab-content .right h2 {
+        font-size: 28px;
+        line-height: 40px;
+        font-family: poppins;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .third-sec .tab-content .right p {
+        font-size: 16px;
+        font-family: 'Poppins';
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 20px;
+        color: white;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .third-sec .container {
+
+        padding: 0px;
+    }
+
+.third-sec .tab-content .left img {
+    width: 350px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.third-sec .row h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: poppins;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+}
+
+}
+
+@media (max-width: 880px) {
+
+    .third-sec .tabs-main {
+        display: flex;
+        gap: 20px;
+    }
+
+.third-sec .tab-content {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.third-sec .tab-content .left
+{
+
+    width: 100%;
+}
+
+.third-sec .tab-content .left img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.third-sec .tab-content .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+}
+@media (max-width: 767px) {
+
+
+.third-sec .tabs .tab-heading1, .tab-heading2, .tab-heading3 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    background: #0044e3;
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+
+}
+
+@media (max-width: 700px) {
+
+    .third-sec .tabs-main {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 0px;
+    }
+
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    .third-sec .tab-content {
+
+        padding: 0px !important;
+        
+    }
+
+.third-sec .tabs {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    padding: 0px;
+}
+
+.third-sec .tabs .tab-heading1, .tab-heading2, .tab-heading3 {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: poppins;
+    font-weight: 500;
+    background: #0044e3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+}
+/* END THIRD SECTION TABS */
