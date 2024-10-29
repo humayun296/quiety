@@ -52,26 +52,9 @@ document.querySelector(".tab").click();
 
 // Testimonial Slider JS Begin
 
-const bullets = document.querySelectorAll('.pagination .bullet');
 
-const slides = document.querySelectorAll('.slide');
 
-let currentSlide = 0;
-
-bullets.forEach((bullet, index) => {
-
-    bullet.addEventListener('click', () => {
-
-        bullets[currentSlide].classList.remove('active');
-        slides[currentSlide].style.display = 'none';
-
-        currentSlide = index;
-
-        bullet.classList.add('active');
-
-        slides[currentSlide].style.display ='flex';
-        slides[currentSlide].style.animation = 'slideEffect 0.5s forwards';
-    });
-});
 
 // Testimonial Slider JS End
+
+
